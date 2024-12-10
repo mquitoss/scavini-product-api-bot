@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_model": "scavini_product_api",
+    "name_for_human": "Scavini Product API",
+    "description_for_model": "Plugin para consultar productos de la API de Scavini (cintas trenzadas). Puedes obtener información sobre productos, tipos de tejidos y colores.",
+    "description_for_human": "Consulta la API de Scavini para información sobre productos textiles.",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "https://mquitoss.github.io/scavini-product-api-bot/openapi.yaml"
+    },
+    "logo_url": "https://TU_DOMINIO/logo.png",
+    "contact_email": "soporte@scavini.com",
+    "legal_info_url": "https://TU_DOMINIO/terminos"
+  }
+  
