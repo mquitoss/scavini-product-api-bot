@@ -4,7 +4,7 @@ info:
   description: API para consultar productos textiles (cintas trenzadas).
   version: 1.0.0
 servers:
-  - url: https://scavini-product-api.azurewebsites.net
+  - url: scavini-product-api-bvbybfcncpcbh9hx.westeurope-01.azurewebsites.net
 paths:
   /productos:
     get:
