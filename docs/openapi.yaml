@@ -1,14 +1,15 @@
-openapi: 3.0.1
+openapi: 3.1.0
 info:
   title: Scavini Product API
   description: API para consultar productos textiles (cintas trenzadas).
   version: 1.0.0
 servers:
-  - url: scavini-product-api-bvbybfcncpcbh9hx.westeurope-01.azurewebsites.net
+  - url: https://scavini-product-api-bvbybfcncpcbh9hx.westeurope-01.azurewebsites.net
 paths:
   /productos:
     get:
       summary: Obtener todos los productos.
+      operationId: obtenerProductos
       responses:
         '200':
           description: Lista de productos.
@@ -34,6 +35,7 @@ paths:
   /productos/{producto_id}:
     get:
       summary: Obtener detalles de un producto por ID.
+      operationId: obtenerProductoPorId
       parameters:
         - name: producto_id
           in: path
@@ -63,6 +65,7 @@ paths:
   /tipos:
     get:
       summary: Obtener todos los tipos de tejidos.
+      operationId: obtenerTipos
       responses:
         '200':
           description: Lista de tipos de tejidos.
@@ -80,6 +83,7 @@ paths:
   /colores:
     get:
       summary: Obtener todos los colores disponibles.
+      operationId: obtenerColores
       responses:
         '200':
           description: Lista de colores.
